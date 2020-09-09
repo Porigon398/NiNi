@@ -1,10 +1,14 @@
 * {
-  /* font-family: 'Kufam', cursive;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-family: 'Noto Sans JP', sans-serif; */
   font-family: 'Noto Serif JP', serif;
-  /* font-family: 'Roboto', sans-serif; */
 }
+
+/* html {
+  visibility: hidden;
+}
+
+html .wf-active {
+  visibility: visible;
+} */
 
 table {
   width: 100%;
