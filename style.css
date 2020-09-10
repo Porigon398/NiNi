@@ -1,14 +1,14 @@
 * {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Kufam';
 }
 
-/* html {
+html {
   visibility: hidden;
 }
 
-html .wf-active {
+html.wf-active, html.loading-delay {
   visibility: visible;
-} */
+}
 
 table {
   width: 100%;
