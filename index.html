@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="serif">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,17 @@
   <div class="title">
     <h1>似とる文字比べるくん</h1>
   </div>
-  <div class="main">
+
+  <div class="font-select">
+    <select id="font-select">
+      <option value="serif">serif</option>
+      <option value="Kufam">Kufam</option>
+      <option value="Grandstander">Grandstander</option>
+      <option value="Syne">Syne</option>
+    </select>
+  </div>
+
+  <div class="main" id="main">
     <table class="table-item">
       <tr class="character">
         <td>I</td>
@@ -83,9 +93,36 @@
   <script>
     WebFont.load({
       google: {
-        families: ['Kufam']
+        families: ['Kufam', 'Grandstander', 'Syne']
       }
     });
+
+    var select = document.getElementById('font-select');
+    var value = "none";
+    var element = document.querySelector('html');
+
+    select.onchange = function() {
+      selectedItem = this.options[this.selectedIndex];
+      value = selectedItem.value
+      console.log(value + " selected!");
+
+      switch (value) {
+        case "serif":
+          element.className = "serif";
+          break;
+        case "Kufam":
+          element.className = "kufam";
+          break;
+        case "Grandstander":
+          element.className = "grandstander";
+          break;
+        case "Syne":
+          element.className = "syne";
+          break;
+        default:
+          break;
+      }
+    }
   </script>
 </body>
 </html>
