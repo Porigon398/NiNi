@@ -12,18 +12,13 @@
   </script>
 </head>
 
-<body>
+<body onload="readFirst()">
   <div class="title">
     <h1>似とる文字比べるくん</h1>
   </div>
 
   <div class="font-select">
-    <select id="font-select">
-      <option value="serif">serif</option>
-      <option value="Kufam">Kufam</option>
-      <option value="Grandstander">Grandstander</option>
-      <option value="Syne">Syne</option>
-    </select>
+    <select id="font-select"></select>
   </div>
 
   <div class="main" id="main">
@@ -96,6 +91,22 @@
         families: ['Kufam', 'Grandstander', 'Syne']
       }
     });
+
+    var list = [
+      {val:"serif", txt:"serif"},
+      {val:"Kufam", txt:"Kufam"},
+      {val:"Grandstander", txt:"Grandstander"},
+      {val:"Syne", txt:"Syne"},
+    ];
+
+    function readFirst() {
+      for(var i=0; i<list.length; i++) {
+        let opt = document.createElement("option");
+        opt.value = list[i].val;
+        opt.text = list[i].txt;
+        document.getElementById("font-select").appendChild(opt);
+      }
+    };
 
     var select = document.getElementById('font-select');
     var value = "none";
