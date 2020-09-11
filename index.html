@@ -88,7 +88,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ['Kufam', 'Grandstander', 'Syne']
+        families: ['Kufam', 'Grandstander', 'Syne', 'Roboto Mono']
       }
     });
 
@@ -97,6 +97,7 @@
       {val:"Kufam", txt:"Kufam"},
       {val:"Grandstander", txt:"Grandstander"},
       {val:"Syne", txt:"Syne"},
+      {val:"Roboto Mono", txt:"Roboto Mono"},
     ];
 
     function readFirst() {
@@ -129,6 +130,9 @@
           break;
         case "Syne":
           element.className = "syne";
+          break;
+        case "Roboto Mono":
+          element.className = "roboto-mono";
           break;
         default:
           break;
