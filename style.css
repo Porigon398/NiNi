@@ -6,26 +6,7 @@ html.wf-active, html.loading-delay {
   visibility: visible;
 }
 
-html.serif {
-  font-family: serif;
-}
-
-html.kufam {
-  font-family: 'Kufam';
-}
-
-html.grandstander {
-  font-family: 'Grandstander';
-}
-
-html.syne {
-  font-family: 'Syne';
-}
-
-html.roboto-mono {
-  font-family: 'Roboto Mono';
-}
-
+/* 16pxより小さいとiPhone上ではズームされてしまうらしい */
 select {
   font-size: 16px;
 }

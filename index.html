@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NiNi</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font.css">
   <script>
-    setTimeout(function () {
-    document.getElementsByTagName("html")[0].classList.add("loading-delay");
-}, 3000);
+    setTimeout(function() {
+      document.getElementsByTagName("html")[0].classList.add("loading-delay");
+    }, 3000);
   </script>
 </head>
 
@@ -85,59 +86,6 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Kufam', 'Grandstander', 'Syne', 'Roboto Mono']
-      }
-    });
-
-    var list = [
-      {val:"serif", txt:"serif"},
-      {val:"Kufam", txt:"Kufam"},
-      {val:"Grandstander", txt:"Grandstander"},
-      {val:"Syne", txt:"Syne"},
-      {val:"Roboto Mono", txt:"Roboto Mono"},
-    ];
-
-    function readFirst() {
-      for(var i=0; i<list.length; i++) {
-        let opt = document.createElement("option");
-        opt.value = list[i].val;
-        opt.text = list[i].txt;
-        document.getElementById("font-select").appendChild(opt);
-      }
-    };
-
-    var select = document.getElementById('font-select');
-    var value = "none";
-    var element = document.querySelector('html');
-
-    select.onchange = function() {
-      selectedItem = this.options[this.selectedIndex];
-      value = selectedItem.value
-      console.log(value + " selected!");
-
-      switch (value) {
-        case "serif":
-          element.className = "serif";
-          break;
-        case "Kufam":
-          element.className = "kufam";
-          break;
-        case "Grandstander":
-          element.className = "grandstander";
-          break;
-        case "Syne":
-          element.className = "syne";
-          break;
-        case "Roboto Mono":
-          element.className = "roboto-mono";
-          break;
-        default:
-          break;
-      }
-    }
-  </script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
