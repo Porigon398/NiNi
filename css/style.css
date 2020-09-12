@@ -66,6 +66,34 @@ table {
   color: var(--sub-color);
 }
 
+.contact {
+  padding-top: 4px;
+  color: var(--main-color);
+}
+
+.contact-img,
+.contact-text {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.contact img {
+  height: 16px;
+}
+
+
+.contact p {
+  margin: 4px 0;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.contact a {
+  color: var(--sub-color);
+  text-decoration: none;
+}
+
 /* デスクトップ用レイアウト */
 @media screen and (min-width: 650px) {
   .br-pc {
