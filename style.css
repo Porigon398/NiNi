@@ -12,7 +12,8 @@ select {
 }
 
 table {
-  width: 100%;
+  width: 80vw;
+  margin: 16px auto;
   table-layout: fixed;
 }
 
