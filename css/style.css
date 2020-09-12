@@ -1,3 +1,13 @@
+:root {
+  --main-color: #0F1C39;
+  --sub-color: #0F1C39aa;
+  --bg-color: #E2EDEC;
+}
+
+html {
+  background-color: var(--bg-color);
+}
+
 html.wf-inactive {
   visibility: hidden;
 }
@@ -26,6 +36,7 @@ table {
 .title {
   line-height: 40px;
   font-size: 20px;
+  color: var(--main-color);
   text-align: center;
 }
 
@@ -36,11 +47,13 @@ table {
 .main .character {
   line-height: 80px;
   font-size: 60px;
+  color: var(--main-color);
 }
 
 .main .description {
   line-height: 20px;
   font-size: 16px;
+  color: var(--sub-color);
 }
 
 /* デスクトップ用レイアウト */
