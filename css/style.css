@@ -40,6 +40,16 @@ table {
   text-align: center;
 }
 
+.title-text,
+.title-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title img {
+  height: 80px;
+}
+
 .main .table-item {
   text-align: center;
 }
