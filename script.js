@@ -6,17 +6,23 @@ var element = document.querySelector('html');
 
 // font list
 var font_list = [
+  {val:"sans serif", txt:"sans serif"},
   {val:"serif", txt:"serif"},
-  {val:"Kufam", txt:"Kufam"},
-  {val:"Grandstander", txt:"Grandstander"},
-  {val:"Syne", txt:"Syne"},
-  {val:"Roboto Mono", txt:"Roboto Mono"},
+  {val:"Monospace", txt:"Monospace"},
+  {val:"Noto Sans JP", txt:"Noto Sans JP"},
+  {val:"Noto Serif JP", txt:"Noto Serif JP"},
+  {val:"M PLUS 1p", txt:"M PLUS 1p"},
+  {val:"M PLUS Rounded 1c", txt:"M PLUS Rounded 1c"},
+  {val:"Sawarabi Mincho", txt:"Sawarabi Mincho"},
+  {val:"Sawarabi Gothic", txt:"Sawarabi Gothic"},
+  {val:"Kosugi Maru", txt:"Kosugi Maru"},
+  {val:"Kosugi", txt:"Kosugi"},
 ];
 
 // load Google Fonts
 WebFont.load({
   google: {
-    families: ['Kufam', 'Grandstander', 'Syne', 'Roboto Mono']
+    families: ['Noto Sans JP', 'Noto Serif JP', 'M PLUS 1p', 'M PLUS Rounded 1c', 'Sawarabi Mincho', 'Sawarabi Gothic', 'Kosugi Maru', 'Kosugi']
   }
 });
 
@@ -38,21 +44,39 @@ select.onchange = function() {
   console.log(value + " selected!");
 
   switch (value) {
-    case "serif":
-      element.className = "serif";
+    case "sans serif":
+      element.className = "sans-serif";
       break;
-    case "Kufam":
-      element.className = "kufam";
-      break;
-    case "Grandstander":
-      element.className = "grandstander";
-      break;
-    case "Syne":
-      element.className = "syne";
-      break;
-    case "Roboto Mono":
-      element.className = "roboto-mono";
-      break;
+      case "serif":
+        element.className = "serif";
+        break;
+      case "Monospace":
+        element.className = "monospace";
+        break;
+      case "Noto Sans JP":
+        element.className = "noto-sans-jp";
+        break;
+      case "Noto Serif JP":
+        element.className = "noto-serif-jp";
+        break;
+      case "M PLUS 1p":
+        element.className = "m-plus-1p";
+        break;
+      case "M PLUS Rounded 1c":
+        element.className = "m-plus-rounded-1c";
+        break;
+      case "Sawarabi Mincho":
+        element.className = "sawarabi-mincho";
+        break;
+      case "Sawarabi Gothic":
+        element.className = "sawarabi-gothic";
+        break;
+      case "Kosugi Maru":
+        element.className = "kosugi-maru";
+        break;
+      case "Kosugi":
+        element.className = "kosugi";
+        break;
     default:
       break;
   }

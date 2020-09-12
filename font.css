@@ -1,19 +1,43 @@
+html.sans-serif {
+  font-family: sans-serif;
+}
+
 html.serif {
   font-family: serif;
 }
 
-html.kufam {
-  font-family: 'Kufam';
+html.monospace {
+  font-family: monospace;
 }
 
-html.grandstander {
-  font-family: 'Grandstander';
+html.noto-sans-jp {
+  font-family: "Noto Sans JP";
 }
 
-html.syne {
-  font-family: 'Syne';
+html.noto-serif-jp {
+  font-family: "Noto Serif JP";
 }
 
-html.roboto-mono {
-  font-family: 'Roboto Mono';
+html.m-plus-1p {
+  font-family: "M PLUS 1p";
+}
+
+html.m-plus-rounded-1c {
+  font-family: "M PLUS Rounded 1c";
+}
+
+html.sawarabi-mincho {
+  font-family: "Sawarabi Mincho";
+}
+
+html.sawarabi-gothic {
+  font-family: "Sawarabi Gothic";
+}
+
+html.kosugi-maru {
+  font-family: "Kosugi Maru";
+}
+
+html.kosugi {
+  font-family: "Kosugi";
 }
